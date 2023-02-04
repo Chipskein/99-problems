@@ -11,11 +11,13 @@
             )
          )
 )))
+
+
 (define pack (lambda (lst )
     (define sub-list '())
     (define correct-lst '())
     (map-pack lst correct-lst sub-list)
 ))
+;(pack '("a" "a" "a" "a" "b" "c" "c" "a" "a" "d" "e" "e" "e" "e"));((A A A A) (B) (C C) (A A) (D) (E E E E))
+(provide pack)
 
-
-(pack '("a" "a" "a" "a" "b" "c" "c" "a" "a" "d" "e" "e" "e" "e"));((A A A A) (B) (C C) (A A) (D) (E E E E))
